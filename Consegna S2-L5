@@ -1,0 +1,20 @@
+Osservando il codice si nota che il programma è un assistente che aiuta a sbrigare alcuni compiti: moltiplicare, dividere e inserire una stringa.
+
+Il codice fornito è un programma interattivo di una calcolatrice, ha un menù iniziale dove è possibile scegliere quale tool utilizzare. 
+Il codice è suddiviso in diversi componenti:
+La prima parte esplicita le funzioni utilizzate 
+    - `menu()`: mostra all'utente un messaggio di benvenuto e un menu con tre opzioni (A, B, C).
+    - `moltiplica()`: richiede all'utente di inserire due numeri interi e di calcolarne il prodotto.
+    - `dividi()`: richiede all'utente di inserire due numeri interi e calcola la loro divisione. Include il controllo degli errori di base per impedire la divisione per zero.
+    - `ins_string()`: richiede all'utente di inserire una stringa (fino a 10 caratteri).
+La seconda parte è la funzione principale del programma:
+    - Dichiara una variabile di carattere `scelta` per memorizzare la scelta del menu dell'utente.
+    - Utilizza `scanf` per leggere la scelta dell'utente e quindi cambia in base al carattere inserito.
+
+Dopo aver risolta alcuni errori di sintassi è stato migliorato e reso più snello il codice.
+Sono stati così aggiunti alcuni miglioramenti e modifiche:
+- E' stata aggiunta la possibilità di eseguire operazioni nell'ordine dei numeri Reali
+- E' stata aggiunta la possibilità di ritornare al menù principale per eseguire successive operazioni
+- Sono stati aggiunti messaggi di errore specifici per validare gli input
+- E' stata incrementata la dimensione dell'array a 11 per gestire al meglio le stringhe e considerare il terminatore nullo
+- E' stato modificato %s a %10s nella funzione 'ins_string' per evitare il buffer overflow, in quanto l'array ha dimensione 11
